@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tax.TaxFragment"
+    android:background="@color/colorBackgroud">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="纳税金额"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:textColor="@color/colorF8F8F8"
+            android:gravity="right|center_vertical"
+            android:textSize="18sp"
+            android:background="@color/colorDisplay" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/textView10TaxResult"
+            android:layout_weight="2"
+            android:textColor="@color/colorF8F8F8"
+            android:gravity="right|center_vertical"
+            android:textSize="30sp"
+            android:background="@color/colorDisplay" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:id="@+id/taxFlFrame"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:text="固定薪资"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/taxBtnSlavary"
+                android:layout_weight="1"
+                android:background="@drawable/mybutton2"
+                android:textColor="@color/colorF8F8F8"
+                android:layout_marginBottom="0dp" />
+
+            <Button
+                android:text="年终奖"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/taxBtnBonus"
+                android:layout_weight="1"
+                android:background="@drawable/mybutton2"
+                android:textColor="@color/colorF8F8F8" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="计算"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/taxBtnCompute"
+            android:layout_weight="1.5"
+            android:background="@drawable/mybtneql"
+            android:textColor="@color/colorF8F8F8"
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+
+</FrameLayout>

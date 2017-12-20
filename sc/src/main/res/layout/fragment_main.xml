@@ -1,0 +1,385 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainFragment"
+    android:background="@color/colorBackgroud">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="toModule"
+                    android:id="@+id/mainLlvStandard"
+                    android:paddingTop="20dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:srcCompat="@drawable/btn_standard"
+                        android:id="@+id/imageView2"
+                        android:layout_weight="2"
+                        android:scaleType="centerInside"
+                        android:layout_marginBottom="0dp" />
+
+                    <TextView
+                        android:text="标准计算器"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/textView4"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorF8F8F8"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical|center_horizontal|center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="toModule"
+                    android:id="@+id/mainLlvScience"
+                    android:paddingTop="20dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:srcCompat="@drawable/btn_science"
+                        android:id="@+id/imageView"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="0dp" />
+
+                    <TextView
+                        android:text="科学计算器"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/textView7"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorF8F8F8"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/mainLlvLoan"
+                    android:paddingTop="20dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:srcCompat="@drawable/btn_loan"
+                        android:id="@+id/imageView5"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="0dp"
+                        android:onClick="MainToLoan" />
+
+                    <TextView
+                        android:text="借贷计算器"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/textView8"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorF8F8F8"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/colorF8F8F8" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/mainLlvRate"
+                    android:onClick="toModule"
+                    android:paddingTop="20dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:srcCompat="@drawable/btn_rate"
+                        android:id="@+id/imageView3"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="0dp" />
+
+                    <TextView
+                        android:text="汇率计算器"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/textView5"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorF8F8F8"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/mainLlvTax"
+                    android:onClick="toModule"
+                    android:paddingTop="20dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:srcCompat="@drawable/btn_tax"
+                        android:id="@+id/imageView7"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="0dp" />
+
+                    <TextView
+                        android:text="税务计算器"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/textView15"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorF8F8F8"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical|center_horizontal|center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/mainLlvRelation"
+                    android:onClick="toModule"
+                    android:paddingTop="20dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:srcCompat="@drawable/btn_relation"
+                        android:id="@+id/imageView3"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="0dp" />
+
+                    <TextView
+                        android:text="辈分计算器"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/textView5"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorF8F8F8"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/colorF8F8F8" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/mainLlvUnit"
+                    android:onClick="toModule"
+                    android:paddingTop="20dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:srcCompat="@drawable/btn_unit"
+                        android:id="@+id/imageView6"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="0dp" />
+
+                    <TextView
+                        android:text="单位换算器"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/textView9"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorF8F8F8"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical|center_horizontal|center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/mainLlvTime"
+                    android:onClick="toModule"
+                    android:paddingTop="20dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:srcCompat="@drawable/btn_time"
+                        android:id="@+id/imageView6"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="0dp" />
+
+                    <TextView
+                        android:text="时间计算器"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/textView9"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorF8F8F8"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical|center_horizontal|center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/mainLlvProgrammer"
+                    android:onClick="toModule"
+                    android:paddingTop="20dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:srcCompat="@drawable/btn_programmer"
+                        android:id="@+id/imageView6"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="0dp" />
+
+                    <TextView
+                        android:text="程序员计算器"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/textView9"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorF8F8F8"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical|center_horizontal|center" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/colorF8F8F8" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/mainLlvPlot"
+                    android:onClick="toModule"
+                    android:paddingTop="20dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:srcCompat="@drawable/btn_plot"
+                        android:id="@+id/imageView6"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="0dp" />
+
+                    <TextView
+                        android:text="绘图计算器"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/textView10"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorF8F8F8"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical|center_horizontal|center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="toModule"
+                    android:paddingTop="20dp"
+                    android:visibility="invisible"
+                    android:id="@+id/mainLlvMatrix">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:srcCompat="@drawable/btn_matrix"
+                        android:id="@+id/imageView8"
+                        android:layout_weight="2"
+                        android:layout_marginBottom="0dp" />
+
+                    <TextView
+                        android:text="矩阵计算器"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/textView11"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorF8F8F8"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical|center_horizontal|center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/colorF8F8F8" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

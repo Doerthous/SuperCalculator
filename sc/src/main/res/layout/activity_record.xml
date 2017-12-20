@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sc.common.record.RecordActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_compute">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="@color/colorBlue">
+        </FrameLayout>
+
+        <TextView
+            android:text="计算记录"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/RecordToMain"
+            android:layout_weight="2"
+            android:background="@color/colorBlue"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorF8F8F8"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="@color/colorBlue">
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="45dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <TextView
+                android:text="请选择你想要保存的路径："
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView6"
+                android:layout_weight="5"
+                android:gravity="left|center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1Record"
+                android:layout_weight="1"
+                android:gravity="left|center" />
+
+            <Button
+                android:text="保存"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/button1Record"
+                android:onClick="Btn1WasClicked"
+                android:background="@drawable/btn_compute" />
+
+            <Button
+                android:text="取消"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/button2Record"
+                android:layout_marginRight="10dp"
+                android:onClick="Btn2WasClicked"
+                android:background="@drawable/btn_compute"
+                android:layout_marginLeft="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <Button
+                android:text="上一层"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button3"
+                android:onClick="Btn3WasClicked"
+                android:background="?attr/colorControlHighlight"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="150dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/LinearLayoutRecord"
+                    android:background="@color/colorF8F8F8" />
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

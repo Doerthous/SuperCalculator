@@ -1,0 +1,327 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.relation.RelationFragment"
+    android:background="@color/colorBackgroud">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorDisplay"
+            android:scrollbarSize="0dp"
+            android:id="@+id/rltScrvResultion">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="right|center_vertical">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltTvRalation"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="right|center"
+                    android:lines="1" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:scrollbarSize="0dp"
+            android:background="@color/colorDisplay"
+            android:id="@+id/rltScrvResult">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="right|center_vertical">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltTvResult"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="36sp"
+                    android:gravity="right|center"
+                    android:lines="1" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:text="称谓计算"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/textView21"
+            android:layout_weight="1.6"
+            android:textColor="@color/colorF8F8F8"
+            android:textSize="18sp"
+            android:gravity="bottom|left"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/colorF8F8F8" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="C"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtnClear"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textAllCaps="true"/>
+
+                <Button
+                    android:text="父"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtn0"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="母"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtn1"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="Del"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtnDel"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="儿"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtn2"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="女"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtn3"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="兄"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtn4"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="弟"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtn5"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="姐"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtn6"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="妹"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtn7"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="夫"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtn8"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="妻"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtn9"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="男生"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtnGender"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="互换"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtnExchange"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="="
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rltBtnEqual"
+                    android:layout_weight="2"
+                    android:background="@drawable/mybtneql"
+                    android:textColor="@color/colorF8F8F8" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:text="关系查找"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/textView10"
+            android:layout_weight="1.6"
+            android:textColor="@color/colorF8F8F8"
+            android:textSize="18sp"
+            android:gravity="bottom|left"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/colorF8F8F8" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:text="称谓"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView24"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorF8F8F8"
+                    android:gravity="center_vertical|center" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/rltEtRation"
+                    android:layout_weight="3"
+                    android:textColor="@color/colorF8F8F8"
+                    android:gravity="right|fill_vertical|center"
+                    android:background="@drawable/border"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:cursorVisible="false"
+                     />
+            </LinearLayout>
+
+            <Button
+                android:text="查找"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/rltBtnCompute"
+                android:layout_weight="1"
+                android:background="@drawable/mybtneql"
+                android:textColor="@color/colorF8F8F8" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

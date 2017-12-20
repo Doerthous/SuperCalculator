@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#25AE90"
+    android:id="@+id/DialogView">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:text="文件夹："
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DialogFolderTextView"
+            android:singleLine="true" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:text="文件名："
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:id="@+id/DialogFileNameEditText"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp">
+        <Button
+            android:text="确定"
+            android:textColor="#25AE90"
+            android:background="#ECEEF1"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/DialogOKBtn" />
+        <Button
+            android:text="取  消"
+            android:textColor="#25AE90"
+            android:background="#ECEEF1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/DialogCancelBtn" />
+    </LinearLayout>
+</LinearLayout>

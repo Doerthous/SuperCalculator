@@ -1,0 +1,242 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.unit.UnitFragment"
+    android:background="@color/colorBackgroud">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:backgroundTint="@color/colorF8F8F8"
+            android:id="@+id/unitSpnPhysics"
+            android:gravity="left|start" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/colorBtnBoarder" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4"
+            android:background="@drawable/border"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:text="1000"
+                android:ems="10"
+                android:id="@+id/unitEtInput"
+                android:layout_weight="1"
+                android:textColor="@color/colorF8F8F8"
+                android:gravity="right|center_vertical"
+                android:background="@drawable/border" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/unitSpnUnit1"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorF8F8F8" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/unitTvResult"
+            android:layout_weight="4"
+            android:background="@color/colorDisplay"
+            android:textColor="@color/colorF8F8F8"
+            android:textSize="36sp"
+            android:gravity="right|center_vertical" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4"
+            android:background="@drawable/border">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/unitSpnUnit2"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorF8F8F8" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:text="7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/unitBtn11"
+                        android:layout_weight="1"
+                        android:background="@drawable/mybutton2"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorF8F8F8" />
+
+                    <Button
+                        android:text="8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/unitBtn10"
+                        android:layout_weight="1"
+                        android:background="@drawable/mybutton2"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorF8F8F8" />
+
+                    <Button
+                        android:text="9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/unitBtn9"
+                        android:layout_weight="1"
+                        android:background="@drawable/mybutton2"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorF8F8F8" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:text="4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/unitBtn8"
+                        android:layout_weight="1"
+                        android:background="@drawable/mybutton2"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorF8F8F8" />
+
+                    <Button
+                        android:text="5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/unitBtn7"
+                        android:layout_weight="1"
+                        android:background="@drawable/mybutton2"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorF8F8F8" />
+
+                    <Button
+                        android:text="6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/unitBtn6"
+                        android:layout_weight="1"
+                        android:background="@drawable/mybutton2"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorF8F8F8" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:text="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/unitBtn5"
+                        android:layout_weight="1"
+                        android:background="@drawable/mybutton2"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorF8F8F8" />
+
+                    <Button
+                        android:text="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/unitBtn4"
+                        android:layout_weight="1"
+                        android:background="@drawable/mybutton2"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorF8F8F8" />
+
+                    <Button
+                        android:text="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/unitBtn3"
+                        android:layout_weight="1"
+                        android:background="@drawable/mybutton2"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorF8F8F8" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:text="C"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/unitBtn2"
+                        android:layout_weight="1"
+                        android:background="@drawable/mybutton2"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorF8F8F8"
+                        android:tag="Clear" />
+
+                    <Button
+                        android:text="0"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/unitBtn1"
+                        android:layout_weight="1"
+                        android:background="@drawable/mybutton2"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorF8F8F8" />
+
+                    <Button
+                        android:text="Del"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/unitBtn0"
+                        android:layout_weight="1"
+                        android:background="@drawable/mybutton2"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorF8F8F8" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

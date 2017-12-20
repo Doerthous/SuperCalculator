@@ -1,0 +1,289 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.MatrixFragment"
+    android:background="@color/colorBackgroud">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="textPersonName"
+            android:id="@+id/matTvExpr"
+            android:background="@color/colorDisplay"
+            android:textColor="@color/colorF8F8F8"
+            android:gravity="right|center_vertical"
+            android:textSize="18sp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="textMultiLine"
+            android:id="@+id/matTvMat"
+            android:layout_weight="4"
+            android:gravity="top"
+            android:scrollbars="horizontal|vertical"
+            android:background="@color/colorDisplay"
+            android:textColor="@color/colorF8F8F8"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="A"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn29"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="B"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn28"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="X"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn27"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="b"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn26"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="set"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn25"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="C1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn21"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn24"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn23"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn22"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="solve"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn20"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="Del1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn16"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn19"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn18"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn17"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="rank"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn15"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="C2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn11"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn14"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn13"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn12"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="det"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn10"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="Del2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn9"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn7"
+                    android:layout_weight="2" />
+
+                <Button
+                    android:text=","
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn6"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="T"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn5"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="+"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn4"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="-"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn3"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="*"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn2"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="Enter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn1"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="="
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/matBtn0"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sc.calculate.loan.LoanResultFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:text="还款详情"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView22"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            android:id="@+id/imageButtonLoanResult"
+            android:layout_weight="5"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:text="月份"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView1LoanResult"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="本月还款（元）"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView2LoanResult"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView25"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="剩余还款（元）"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ListViewLoan" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.programmer.HexKbSubFgm2Fragment"
+    android:background="@color/colorBackgroud">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="RoL"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/pgmBtnRoL"
+            android:layout_weight="1"
+            android:background="@drawable/mybutton2"
+            android:textColor="@color/colorF8F8F8"
+            android:textSize="18sp"
+            android:gravity="center_vertical|center_horizontal|center" />
+
+        <Button
+            android:text="RoR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/pgmBtnRoR"
+            android:layout_weight="1"
+            android:background="@drawable/mybutton2"
+            android:textColor="@color/colorF8F8F8"
+            android:textSize="18sp"
+            android:gravity="center_vertical|center_horizontal|center" />
+
+        <Button
+            android:text="Lsh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/pgmBtnLsh"
+            android:layout_weight="1"
+            android:background="@drawable/mybutton2"
+            android:textColor="@color/colorF8F8F8"
+            android:textSize="18sp"
+            android:gravity="center_vertical|center_horizontal|center" />
+
+        <Button
+            android:text="Rsh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/pgmBtnRsh"
+            android:layout_weight="1"
+            android:background="@drawable/mybutton2"
+            android:textColor="@color/colorF8F8F8"
+            android:textSize="18sp"
+            android:gravity="center_vertical|center_horizontal|center" />
+    </LinearLayout>
+
+</FrameLayout>

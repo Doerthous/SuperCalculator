@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_loan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sc.calculate.loan.LoanActivity"
+    android:background="@color/colorBackgroud">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_compute">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/btn_return"
+            android:id="@+id/mainBtnReturn"
+            android:layout_weight="1"
+            android:background="@color/colorBlue"
+            android:scaleType="centerInside"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="50dp"
+            android:onClick="BackBtnClicked"
+            android:elevation="1dp" />
+
+        <TextView
+            android:text="借贷计算器"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/mainTvTitle"
+            android:layout_weight="2"
+            android:background="@color/colorBlue"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorF8F8F8"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="@color/colorBlue">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton1Loan"
+                    android:layout_weight="1"
+                    android:onClick="BeginOrPauseBtnWasClicked"
+                    android:background="@color/colorTransparent"
+                    app:srcCompat="@drawable/btn_start"
+                    android:scaleType="centerInside" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/btn_stop2"
+                    android:id="@+id/imageButton2Loan"
+                    android:layout_weight="1"
+                    android:elevation="1dp"
+                    android:onClick="StopBtnWasClicked"
+                    android:scaleType="centerInside"
+                    android:background="@color/colorBlue" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/linearout"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/linearout"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="-4dp">
+
+            <TabHost
+                android:id="@+id/tabhostLoan"
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:layout_weight="1.73">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible" />
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_weight="3.37">
+
+                        <LinearLayout
+                            android:id="@+id/tabBusnloan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView1Busnloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="贷款金额"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <EditText
+                                    android:id="@+id/editText1Busnloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:gravity="bottom|center"
+                                    android:inputType="numberDecimal"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <TextView
+                                    android:id="@+id/textView5Busnloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:text="万元"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8"
+                                    android:gravity="bottom" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView2Busnloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="贷款年限"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <EditText
+                                    android:id="@+id/editText2Busnloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:gravity="bottom|center"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="5"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <TextView
+                                    android:id="@+id/textView6Busnloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="年"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView3Busnloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="贷款利率"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <EditText
+                                    android:id="@+id/editText3Busnloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:gravity="bottom|center"
+                                    android:inputType="numberDecimal"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <TextView
+                                    android:id="@+id/textView7Busnloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom|center"
+                                    android:text="%"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView4Busnloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="bottom"
+                                    android:text="还款方式"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <Spinner
+                                        android:id="@+id/spinner1Busnloan"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:layout_weight="3.8"
+                                        android:gravity="bottom|center"
+                                        android:backgroundTint="@color/colorF8F8F8" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/textView13"
+                                        android:layout_weight="1" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/colorGray" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tabFundloan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView1Fundloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="贷款金额"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <EditText
+                                    android:id="@+id/editText1Fundloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:gravity="bottom|center"
+                                    android:inputType="numberDecimal"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <TextView
+                                    android:id="@+id/textView5Fundloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="万元"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView2Fundloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="贷款年限"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <EditText
+                                    android:id="@+id/editText2Fundloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:gravity="bottom|center"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="5"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <TextView
+                                    android:id="@+id/textView6Fundloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="年"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView3Fundloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="贷款利率"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <EditText
+                                    android:id="@+id/editText3Fundloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:gravity="bottom|center"
+                                    android:inputType="numberDecimal"
+                                    android:text="4.9"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <TextView
+                                    android:id="@+id/textView7Fundloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom|center"
+                                    android:text="%"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView4Fundloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="bottom"
+                                    android:text="还款方式"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="bottom|center"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <Spinner
+                                        android:id="@+id/spinner1Fundloan"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|center"
+                                        android:layout_weight="3.8"
+                                        android:gravity="bottom|center"
+                                        android:backgroundTint="@color/colorF8F8F8" />
+
+                                    <TextView
+                                        android:text="TextView"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView14"
+                                        android:layout_weight="1"
+                                        android:visibility="invisible" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/colorGray" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tabCombloan"
+                            android:layout_width="match_parent"
+                            android:layout_height="212dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView1Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="商业贷款金额"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <EditText
+                                    android:id="@+id/editText1Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:gravity="bottom|center"
+                                    android:inputType="numberDecimal"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <TextView
+                                    android:id="@+id/textView7Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom|center"
+                                    android:text="万元"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView2Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="公积金贷款金额"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <EditText
+                                    android:id="@+id/editText2Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:gravity="bottom|center"
+                                    android:inputType="numberDecimal"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <TextView
+                                    android:id="@+id/textView8Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom|center"
+                                    android:text="万元"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView3Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="贷款年限"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <EditText
+                                    android:id="@+id/editText3Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:gravity="bottom|center"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="5"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <TextView
+                                    android:id="@+id/textView9Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="年"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView4Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="商业贷款利率"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <EditText
+                                    android:id="@+id/editText4Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:gravity="bottom|center"
+                                    android:inputType="numberDecimal"
+                                    android:text="4.9"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <TextView
+                                    android:id="@+id/textView10Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="%"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView5Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:text="公积金贷款利率"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <EditText
+                                    android:id="@+id/editText5Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:ems="10"
+                                    android:gravity="bottom|center"
+                                    android:inputType="numberDecimal"
+                                    android:text="3.25"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <TextView
+                                    android:id="@+id/textView11Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom|center"
+                                    android:text="%"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView6Combloan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="bottom|center"
+                                    android:text="还款方式"
+                                    android:textColor="@color/colorF8F8F8" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom|center"
+                                    android:orientation="horizontal">
+
+                                    <Spinner
+                                        android:id="@+id/spinner1Combloan"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:elevation="1dp"
+                                        android:layout_weight="3.8"
+                                        android:backgroundTint="@color/colorF8F8F8"
+                                        android:gravity="bottom|center"
+                                        android:layout_gravity="bottom|center" />
+
+                                    <TextView
+                                        android:text="TextView"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/textView16"
+                                        android:layout_weight="1"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="2px"
+                                android:background="@color/colorGray" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:layout_weight="3.5"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="265dp">
+
+            <TextView
+                android:id="@+id/textView1Loan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linearout"
+                android:layout_marginEnd="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="实时利率由聚合数据提供。"
+                android:textColor="@color/colorF8F8F8" />
+
+            <Button
+                android:id="@+id/button1Loan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorBlue"
+                android:onClick="button1LoanWasClicked"
+                android:text="计算"
+                android:textColor="@color/colorF8F8F8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="362dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2Loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="利息总计"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <TextView
+                    android:id="@+id/textView5Loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="0万元"
+                    android:textColor="@color/colorF8F8F8" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3Loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="本息总计"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <TextView
+                    android:id="@+id/textView6Loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="0万元"
+                    android:textColor="@color/colorF8F8F8" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4Loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="月供"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <TextView
+                    android:id="@+id/textView7Loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:text="0元"
+                    android:textColor="@color/colorF8F8F8" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/colorGray" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

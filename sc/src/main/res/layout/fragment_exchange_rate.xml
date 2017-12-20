@@ -1,0 +1,199 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.exchangerate.ExchangeRateFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgroud">
+
+        <TextView
+            android:text="转换结果"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/textView10ExchSmall"
+            android:layout_weight="1"
+            android:textColor="@color/colorF8F8F8"
+            android:gravity="right|center_vertical"
+            android:background="@color/colorDisplay" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/textView3ExchBig"
+            android:layout_weight="3"
+            android:textColor="@color/colorF8F8F8"
+            android:textSize="36sp"
+            android:gravity="right|center_vertical"
+            android:background="@color/colorDisplay" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+                <TextView
+                    android:text="源货币"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/textView13Exch"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorF8F8F8" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/spinnerExchSrc"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorF8F8F8"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:textAlignment="gravity" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorF8F8F8" />
+                <TextView
+                    android:text="货币数额"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/textView12Exch"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/textView17Exch"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:srcCompat="@drawable/btn_rate_exchange"
+                    android:id="@+id/imageButtonExchExchange"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:background="@color/colorTransparent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/textView16Exch"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+                <TextView
+                    android:text="目标货币"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/textView15Exch"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorF8F8F8" />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/spinner2ExchObj"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorF8F8F8"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:textAlignment="gravity" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/colorF8F8F8" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:inputType="textPersonName"
+                    android:background="@null"
+                    android:ems="10"
+                    android:id="@+id/editTextExchMoney"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:hint="请输入金额" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/colorF8F8F8" />
+        <TextView
+            android:text="其他汇率转换结果"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/textView11Exch"
+            android:layout_weight="2"
+            android:textColor="@color/colorF8F8F8"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/colorF8F8F8" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/listViewExchOtherRate"
+            android:background="@color/colorDisplay" />
+
+        <Button
+            android:text="计算"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/buttonExchCompute"
+            android:layout_weight="2"
+            android:background="@drawable/mybtneql"
+            android:textColor="@color/colorF8F8F8"
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,503 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.general.ScienceFragment"
+    android:background="@color/colorBackgroud">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="@color/colorDisplay"
+            android:scrollbarSize="0dp"
+            android:id="@+id/sciScrvBig">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="right|center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciTvSmall"
+                    android:layout_weight="1.5"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="36sp"
+                    android:gravity="right|center_vertical" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorDisplay"
+            android:id="@+id/sciScrvSmall">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="right|center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciTvBig"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="24sp"
+                    android:gravity="right|center_vertical"
+                    android:ellipsize="marquee" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="x²"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn34"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="xⁿ"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn33"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="sin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn32"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="cos"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn31"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="tan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn30"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn29"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:text="√x" />
+
+                <Button
+                    android:text="10ⁿ"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn28"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="log"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn27"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="n!"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn26"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="%"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn25"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="↑"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn24"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="C"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn23"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:tag="Clear" />
+
+                <Button
+                    android:text="CE"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn22"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="Del"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn21"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="×"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn20"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="π"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn19"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn18"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="24sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn17"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="24sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn16"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="24sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="÷"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn15"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="e"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn14"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center"
+                    android:tag="NB" />
+
+                <Button
+                    android:text="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn13"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="24sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn12"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="24sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn11"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="24sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="+"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn10"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="±"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn9"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn8"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="24sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn7"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="24sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn6"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="24sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="—"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn5"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="("
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn4"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text=")"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn3"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn2"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="24sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="."
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn1"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+
+                <Button
+                    android:text="="
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/sciBtn0"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybtneql"
+                    android:textColor="@color/colorF8F8F8"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|center_horizontal|center" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

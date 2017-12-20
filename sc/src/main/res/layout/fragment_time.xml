@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.time.TimeFragment"
+    android:background="@color/colorBackgroud">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:textColor="@color/colorF8F8F8"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:ellipsize="start"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@color/colorDisplay" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="right|center"
+                android:textColor="@color/colorF8F8F8"
+                android:textSize="40sp"
+                android:id="@+id/textView"
+                android:background="@color/colorDisplay" />
+
+            <Button
+                android:text="选择日期"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/button2"
+                android:layout_weight="1"
+                android:background="@drawable/mybutton2"
+                android:textColor="@color/colorF8F8F8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/timeFlFrame">
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

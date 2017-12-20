@@ -1,0 +1,550 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.plot.PlotFragment"
+    android:background="@color/colorBackgroud">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="XMin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView28"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:textColor="@color/colorF8F8F8" />
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/plotTvXmin"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:textColor="@color/colorF8F8F8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="XMax"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView26"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:textColor="@color/colorF8F8F8" />
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/plotTvXmax"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:textColor="@color/colorF8F8F8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="YMin"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView19"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:textColor="@color/colorF8F8F8" />
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/plotTvYmin"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:textColor="@color/colorF8F8F8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="YMax"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView14"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:textColor="@color/colorF8F8F8" />
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/plotTvYmax"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:textColor="@color/colorF8F8F8" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Scale"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView27"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:textColor="@color/colorF8F8F8"  />
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/plotTvUnit"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:textColor="@color/colorF8F8F8"  />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:text="清空"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/plotBtnClear"
+                            android:layout_weight="1"
+                            android:background="@drawable/mybutton2"
+                            android:textColor="@color/colorF8F8F8" />
+
+                        <Button
+                            android:text="原点"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/plotBtnReset"
+                            android:layout_weight="1"
+                            android:background="@drawable/mybutton2"
+                            android:textColor="@color/colorF8F8F8" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:text="放大"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/plotBtnZoomIn"
+                            android:layout_weight="1"
+                            android:background="@drawable/mybutton2"
+                            android:textColor="@color/colorF8F8F8" />
+
+                        <Button
+                            android:text="缩小"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/plotBtnZoomOut"
+                            android:layout_weight="1"
+                            android:background="@drawable/mybutton2"
+                            android:textColor="@color/colorF8F8F8" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.sc.ui.plot.PaintBoard
+                android:id="@+id/plotPb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorDisplay"
+                android:scrollbarSize="0dp"
+                android:id="@+id/plotScrv">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="right">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/plotTvExpr"
+                        android:textColor="@color/colorF8F8F8"
+                        android:textSize="24sp"
+                        android:gravity="right|center_vertical|center" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:text="C"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/plotBtn28"
+                android:layout_weight="1"
+                android:background="@drawable/mybutton2"
+                android:textColor="@color/colorF8F8F8"
+                android:tag="Clear" />
+
+            <Button
+                android:text="sin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/plotBtn27"
+                android:layout_weight="1"
+                android:background="@drawable/mybutton2"
+                android:textColor="@color/colorF8F8F8" />
+
+            <Button
+                android:text="cos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/plotBtn26"
+                android:layout_weight="1"
+                android:background="@drawable/mybutton2"
+                android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="tan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn25"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                android:text="x"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/plotBtn24"
+                android:layout_weight="1"
+                android:background="@drawable/mybutton2"
+                android:textColor="@color/colorF8F8F8" />
+                <Button
+                    android:text="Del"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn23"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+        </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="π"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn22"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn21"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn20"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn19"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="+"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn18"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+                <Button
+                    android:text="log"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn17"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <Button
+                    android:text="e"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn16"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:tag="nature_base" />
+                <Button
+                    android:text="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn15"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn14"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn13"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="—"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn12"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="^"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn11"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn10"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8"
+                    android:text="±" />
+                <Button
+                    android:text="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn9"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn8"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn7"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="×"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn6"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="rad"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn5"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <Button
+                    android:text="("
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn4"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+                <Button
+                    android:text=")"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn3"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn2"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="."
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn1"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="÷"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtn0"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="@color/colorF8F8F8" />
+
+                <Button
+                    android:text="Plot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/plotBtnPlot"
+                    android:layout_weight="1"
+                    android:background="@color/colorBlue"
+                    android:textColor="@color/colorF8F8F8" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

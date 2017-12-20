@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tax.BonusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:text="每月工资"
+                android:layout_height="match_parent"
+                android:id="@+id/textView11"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:layout_width="0dp"
+                android:textColor="@color/colorF8F8F8"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/taxEtSlavary2"
+                android:layout_weight="2"
+                android:gravity="right|center_horizontal|center"
+                android:background="@null"
+                android:layout_width="0dp"
+                android:textColor="@color/colorF8F8F8"
+                android:textSize="18sp"
+                android:hint="请输入每月工资" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/colorF8F8F8" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:text="年终奖励"
+                android:layout_height="match_parent"
+                android:id="@+id/textView12"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:layout_width="0dp"
+                android:textColor="@color/colorF8F8F8"
+                android:textSize="18sp" />
+
+            <EditText
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/taxEtBonus"
+                android:layout_weight="2"
+                android:gravity="right|center_horizontal|center"
+                android:background="@null"
+                android:layout_width="0dp"
+                android:textColor="@color/colorF8F8F8"
+                android:textSize="18sp"
+                android:paddingRight="0dp"
+                android:paddingEnd="0dp"
+                android:hint="请输入年终奖励" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/colorF8F8F8" />
+    </LinearLayout>
+</FrameLayout>
